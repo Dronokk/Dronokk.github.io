@@ -1,0 +1,258 @@
+html {
+   overflow-x: hidden;
+   font-family: "Raleway";
+   font-size: 28px;
+   text-align: center;
+   align-items: center;
+}
+
+body {
+   margin: 10px;
+}
+
+@font-face {
+   font-family: "Raleway";
+   src: url(../fonts/Raleway-VariableFont_wght.ttf);
+}
+
+.header-logo {
+   text-align: center;
+}
+
+.header-main {
+   width: 75%;
+   position: static;
+}
+
+.a-menu {
+   text-decoration: none;
+   color: black;
+   position: relative;
+}
+
+.a-menu:hover {
+   color: #38ACEC;
+   box-shadow: 0 16px 32px 0 rgba(0, 40, 120, .35);
+}
+
+.menu {
+   width: 25%;
+}
+
+.flex {
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+::-webkit-scrollbar {
+   width: 0;
+}
+
+.service {
+   font-size: 40px;
+   text-align: center;
+}
+
+.services {
+   font-size: 25px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.services-img {
+   width: 400px;
+   height: 350px;
+}
+
+img {
+   transition: transform 0.25s;
+}
+
+.services-img:hover img {
+   transform: scale(1.2);
+}
+
+.rabota {
+   font-size: 25px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.rabota_img {
+   padding: 15px;
+}
+
+.rabota_img:hover img {
+   transform: scale(1.2);
+}
+
+hr {
+   height: 20px;
+   margin: 30px auto;
+   width: 90%;
+   background-image: radial-gradient(farthest-side at 50% -50%, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+   position: relative;
+   border: none;
+}
+
+hr:before {
+   height: 1px;
+   position: absolute;
+   top: -1px;
+   left: 0;
+   right: 0;
+   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0));
+}
+
+.footer {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+p {
+   text-align: center;
+}
+
+.istoria-img:hover img {
+   transform: scale(1.2);
+}
+
+.we-img:hover img {
+   transform: scale(1.2);
+}
+
+.photo-img {
+   padding: 15px;
+}
+
+.photo {
+   font-size: 25px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.photo-img:hover img {
+   transform: scale(1.5);
+   border-top-right-radius: 20%;
+   border-bottom-left-radius: 20%;
+}
+
+.contacs {
+   font-size: 25px;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+form {
+   margin: 0 auto;
+   position: relative;
+   width: 41%;
+   height: 300px;
+   color: black;
+}
+
+input {
+   width: 100%;
+   padding: 15px;
+   background: #f1f1f1;
+   color: grey;
+}
+
+.pressed-button {
+   text-decoration: none;
+   display: inline-block;
+   padding: 12px 30px;
+   border-radius: 20px;
+   background-image: linear-gradient(DeepSkyBlue 0%, skyblue 50%, darkcyan 100%);
+   background-position: 100% 0;
+   color: white;
+   box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
+   transition: .1s;
+}
+
+.pressed-button:hover {
+   box-shadow: 0 8px 16px 0 rgba(0, 40, 120, .35);
+   background-position: 0 0;
+}
+
+@media screen and (max-width: 720px) {
+   .header-main {
+      width: 600px;
+      margin-bottom: 100px;
+      position: relative;
+   }
+
+   .img-header {
+      height: 250px;
+      width: 350px;
+      text-align: center;
+   }
+
+   .img-rabota {
+      width: 307px;
+      height: 204px;
+   }
+
+   .img-services {
+      width: 332, 8px;
+      height: 221px;
+   }
+
+   .img-photo {
+      width: 307px;
+      height: 204px;
+   }
+
+   .photo-img:hover img {
+      transform: scale(1.3);
+      border-top-right-radius: 20%;
+      border-bottom-left-radius: 20%;
+   }
+
+   .img-we {
+      width: 307px;
+      height: 204px;
+   }
+
+   .hr-button {
+      margin-top: 70px;
+   }
+
+   .flex {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+   }
+
+   .img-istoria {
+      width: 307px;
+      height: 204px;
+   }
+
+}
